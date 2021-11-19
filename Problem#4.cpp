@@ -13,15 +13,15 @@ int main()
 	cout<<" Enter target sum "<<endl;
 	cin>>sum;
 	bool flag = true;
-	for(int a=0; a<arr/2+1; a++, flag=true)
+	for(int a=0; a<arr/2+1; a++)
 	{
 		for(int b=arr; b>=arr/2+1; b--)
 		{
 			if(num[a]+num[b]==sum)
 			{
-				cout<<" The numbers are found ";
-				cout<<sum;
-				flag = false;
+				cout<<"\n The numbers are found ";
+				cout<<num[a]<<"+"<<num[b]<<"=="<<sum;
+				cout<<endl;
 			}
 		}
 	}
